@@ -439,4 +439,181 @@ body {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+/* ============ Burger Menyu ============= */
+.site-header {
+  padding: 45px 0 52px;
+}
+
+.site-header__burger {
+  background-image: url("../../images/icons/burger.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  width: 28px;
+  height: 17px;
+}
+
+.site-header-close {
+  background-image: url("../../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 64px;
+  margin-left: 220px;
+  position: relative;
+}
+.site-header-close::before {
+  position: absolute;
+  left: -220px;
+  bottom: -24px;
+  background-color: var(--main-white-water-color);
+  width: 249px;
+  height: 1px;
+  opacity: 0.15;
+  content: "";
+}
+
+.site-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 49px;
+}
+
+.site-header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-nav__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 300px;
+  width: 100%;
+  background-color: var(--main-mirage-blue-color);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.site-nav__wrapper.shownav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.sitenav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  opacity: 0.7;
+  display: inline-block;
+  margin-bottom: 32px;
+  color: var(--main-white-water-color);
+}
+
+.site-nav__btn {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: var(--main-white-color);
+  background-color: var(--main-dark-pink);
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  padding: 16px 34px 14px 38px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.site-nav__btn:hover {
+  background-color: var(--main-charm-color);
+}
+
+@media only screen and (min-width: 700px) {
+  .site-header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-header {
+    padding: 30px 0 51px;
+  }
+  .sitenav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30px;
+  }
+  .site-nav__button {
+    margin-left: auto;
+    margin-top: -20px;
+  }
+  .site-header__burger {
+    display: none;
+  }
+  .site-nav__wrapper {
+    position: static;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    max-width: none;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    background-color: transparent;
+    padding-top: 0;
+  }
+  .site-header-close {
+    display: none;
+  }
+  .sitenav-link {
+    color: var(--main-san-juan-color);
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .sitenav-list {
+    margin-left: 65px;
+  }
+  .sitenav-link {
+    margin-left: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */

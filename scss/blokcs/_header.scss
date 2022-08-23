@@ -60,6 +60,7 @@
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: 9999;
     max-width: 300px;
     width: 100%;
     background-color:var(--main-mirage-blue-color);
@@ -80,11 +81,14 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    opacity: 0.7;
     display: inline-block;
     margin-bottom: 32px;
     color: var(--main-white-water-color);
-    
+    opacity: 0.7;
+    transition: 0.5s;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .site-nav__btn {
@@ -167,6 +171,4 @@
     .sitenav-link {
         margin-left: 40px;
     }
-
-
 }

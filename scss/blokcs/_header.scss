@@ -1,13 +1,11 @@
 
 /* ============ Burger Menyu ============= */
-
 .site-header {
     padding: 45px 0 52px;
     background-image: url("../images/header-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: calc(100%) calc(50%);
 }
-
 
 .site-header__burger {
     width: 28px;
@@ -60,6 +58,7 @@
 
 .site-nav__wrapper {
     position: fixed;
+    z-index: 99;
     top: 0;
     right: 0;
     bottom: 0;
@@ -111,27 +110,30 @@
 
 
 @include mobile-first(700px) {
-   
+    .site-header {
+        background-image: none;
+    }
+    
     .site-header__wrapper {
         display: flex;
         align-items: center;
     }
-
+    
     .site-header {
         padding: 30px 0 51px;
     }
-
+    
     .sitenav-list {
         display: flex;
         align-items: center;
         margin-left: 30px;
     }
-
+    
     .site-nav__button {
         margin-left: auto;
         margin-top: -20px;
     }
-   
+    
     .site-header__burger {
         display: none;
     }
@@ -156,20 +158,27 @@
         margin-bottom: 0;
         margin-left: 10px;
     }
-
+    
     
 }
 
-@include mobile-first (1000px) {
+@include mobile-first (900px) {
+    .site-header {
+        overflow: hidden;
+    }
+}
 
+
+@include mobile-first (1000px) {
+    
     .sitenav-list  {
         margin-left: 65px;
     }
-
-
+    
+    
     .sitenav-link {
         margin-left: 40px;
     }
-
-
+    
+    
 }

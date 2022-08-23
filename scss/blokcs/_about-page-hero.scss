@@ -1,0 +1,48 @@
+.about-hero {
+    padding-bottom: 328px;
+    background-image: url("../images/person-mobile.png");
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(100%);
+}
+
+.about-hero__inner {
+    min-width: 327px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-hero__title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.about-hero__list {
+    @include list-none;  
+}
+
+.about-hero__title2 {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.about-hero__text {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+    margin: 0;
+    margin-bottom: 48px;
+}

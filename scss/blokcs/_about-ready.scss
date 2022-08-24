@@ -23,12 +23,19 @@
 
 .about-ready__inp {
     width: 327px;
-    border: none;
+    border-color: transparent;
     background-color: #FBFCFE;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
     border-radius: 24px;
     padding: 15px 27px;
     margin-bottom: 16px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    
     &::placeholder {
         font-family: 'Public Sans';
         font-weight: 700;
@@ -39,6 +46,12 @@
     }
 }
 
+.about-ready__inp:not(:placeholder-shown):not(:focus):invalid {
+    border-color: #f00;
+    color: #f00;
+    opacity: 0.5;
+} 
+
 .about-ready__btn {
     font-family: 'Public Sans';
     font-style: normal;
@@ -48,7 +61,7 @@
     text-align: center;
     letter-spacing: -0.115385px;
     color: #FBFCFE;
-    padding: 15px 100px;
+    padding: 16px 100px;
     border: none;
     background: #BA4270;
     border-radius: 24px;
@@ -96,7 +109,7 @@
     
     .about-ready__btn {
         position: absolute;
-        top: 0;
+        top: 2px;
         left: calc(58%);
         width: 173px;
         padding: 15px 25px;

@@ -86,7 +86,6 @@
     display: inline-block;
     margin-bottom: 32px;
     color: var(--main-white-water-color);
-    
 }
 
 .site-nav__btn {
@@ -157,6 +156,12 @@
         color:var(--main-san-juan-color);
         margin-bottom: 0;
         margin-left: 10px;
+        opacity: 0.7;
+
+        &:active {
+            color: #36536B;
+            opacity: 1;
+        }
     }
     
     
@@ -165,6 +170,12 @@
 @include mobile-first (900px) {
     .site-header {
         overflow: hidden;
+    }
+
+    .site-nav__link {
+        &:active {
+            color: #36536B;
+        }
     }
 }
 
@@ -178,7 +189,9 @@
     
     .sitenav-link {
         margin-left: 40px;
+
+        &:active {
+            color: #36536B;
+        }
     }
-    
-    
 }

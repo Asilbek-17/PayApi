@@ -1,23 +1,30 @@
 
 /* ============ Burger Menyu ============= */
 
+.pricing__circle {
+    background-image: url("../images/icons/Bitmap.svg");
+    background-repeat: no-repeat;
+}
+
+
+
 .site-header {
     padding: 45px 0 52px;
 }
 
 
 .site-header__burger {
-    background-image: url("../../images/icons/burger.svg");
-    background-repeat: no-repeat;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
     width: 28px;
     height: 17px;
+    background-color: transparent;
+    background-image: url("../images/icons/burger.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
 }
 
 .site-header-close {
-    background-image: url("../../images/icons/close.svg");
+    background-image: url("../images/icons/close.svg");
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
@@ -60,7 +67,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 9999;
+    z-index: 1;
     max-width: 300px;
     width: 100%;
     background-color:var(--main-mirage-blue-color);
@@ -110,29 +117,41 @@
     
 }
 
+@include mobile-first(320px) {
+
+    .pricing__circle {
+        background-position: calc(50% + 400px) calc(50% - 1100px);
+    }
+
+}
+
 
 @include mobile-first(700px) {
-   
+    
     .site-header__wrapper {
         display: flex;
         align-items: center;
     }
-
+    
+    .pricing__circle {
+        background-position: calc(50% + 430px) calc(50% - 1100px);
+    }
+    
     .site-header {
         padding: 30px 0 51px;
     }
-
+    
     .sitenav-list {
         display: flex;
         align-items: center;
         margin-left: 30px;
     }
-
+    
     .site-nav__button {
         margin-left: auto;
         margin-top: -20px;
     }
-   
+    
     .site-header__burger {
         display: none;
     }
@@ -157,17 +176,26 @@
         margin-bottom: 0;
         margin-left: 10px;
     }
-
-    
 }
 
-@include mobile-first (1000px) {
 
+@include mobile-first (780px) {
+    
+    .pricing__circle {
+        background-position: calc(50% + 450px) calc(50% - 600px)
+    }
+}
+
+
+
+
+@include mobile-first (1000px) {
+    
     .sitenav-list  {
         margin-left: 65px;
     }
-
-
+    
+    
     .sitenav-link {
         margin-left: 40px;
     }

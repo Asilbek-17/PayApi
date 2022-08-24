@@ -5,64 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayApi</title>
+    <link rel="shortcut icon" href="images/icons/logosmall.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
-    <!-- Site Header Start -->
-    
-    <header class="site-header">
-        <div class="container">
-            <div class="site-header__wrapper">
-                
-                <div class="site-header__block">
-                    <a class="site-header__logo" href="index.html">
-                        <img src="images/icons/logo.svg" alt="site-logo">
-                    </a>
+
+    <div class="pricing__circle">
+
+        <!-- Site Header Start -->
+        
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__wrapper">
                     
-                    <button class="site-header__burger" type="button"></button>
-                </div>
-                
-                <!-- site nav -->
-                <div class="site-nav__wrapper">
-                    <!-- close btn -->
-                    <button class="site-header-close"></button>
-                    <nav class="sitenav">
-                        <ul class="sitenav-list">
-                            <li class="sitenav-item">
-                                <a href="index.html" class="sitenav-link">Pricing</a>
-                            </li>
-                            <li class="sitenav-item">
-                                <a href="" class="sitenav-link">About</a>
-                            </li>
-                            <li class="sitenav-item">
-                                <a href="" class="sitenav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="site-nav__button">
-                        <a class="site-nav__btn" href="#">Schedule a Demo</a>
+                    <div class="site-header__block">
+                        <a class="site-header__logo" href="index.html">
+                            <img src="images/icons/logo.svg" alt="site-logo">
+                        </a>
+                        
+                        <button class="site-header__burger" type="button"></button>
                     </div>
+                    
+                    <!-- site nav -->
+                    <div class="site-nav__wrapper">
+                        <!-- close btn -->
+                        <button class="site-header-close"></button>
+                        <nav class="sitenav">
+                            <ul class="sitenav-list">
+                                <li class="sitenav-item">
+                                    <a href="index.html" class="sitenav-link">Pricing</a>
+                                </li>
+                                <li class="sitenav-item">
+                                    <a href="" class="sitenav-link">About</a>
+                                </li>
+                                <li class="sitenav-item">
+                                    <a href="" class="sitenav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="site-nav__button">
+                            <a class="site-nav__btn" href="#">Schedule a Demo</a>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
-                
-                
             </div>
-        </div>
+            
+        </header>
         
-    </header>
+        <!-- Site Header Finish -->
     
-    
-    <!-- Site Header Finish -->
-    
-    
-    <!-- ================= Main start ========================== -->
-    
-    <main>
-        
-        
-        <!-- pricing hero start -->
-        
-        <section class="pricing">
+         <!-- pricing hero start -->
+            
+         <section class="pricing">
             <div class="container">
                 <h2 class="pricing__title">
                     Pricing
@@ -124,7 +121,7 @@
                         </div>
                     </ul> 
                     <ul class="pricing__list">
-                        <li class="pricing__item pricing__item-right">
+                        <li class="pricing__item pricing">
                             <h3 class="pricing__item-title">
                                 Premium Plan
                             </h3>
@@ -155,7 +152,31 @@
         </section>
         
         <!-- pricing hero end -->
-        
+
+    </div>
+    
+    
+    <!-- ================= Main start ========================== -->
+    
+    <main>
+         
+       <!-- Pricing ready start -->
+
+        <section class="pricing__ready">
+            <div class="container">
+                <div class="pricing__ready-wrapper">
+                    <h2 class="pricing__ready-title">
+                        Ready to start?
+                    </h2>
+                    <form class="pricing__ready-form" action="https://echo.htmlacademy.ru/courses" >
+                        <input class="pricing__ready-input" type="email" placeholder="Enter email address" required>
+                        <button class="pricing__ready-button" type="button" >Schedule a Demo</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing ready end -->
         
         
     </main>
@@ -164,13 +185,9 @@
     <!-- ================= Main end ============================ -->
     
     
-    <!-- Site Footer Start -->
-    <footer class="site-footer">
-        <div class="container">
-            
-        </div>
-    </footer>
-    <!-- Site Footer Finish -->
+  <!-- footer start -->
+
+  <!-- footer end -->
     
     <script src="js/app.js"></script>
 </body>

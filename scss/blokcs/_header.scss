@@ -101,7 +101,7 @@
     border-radius: 24px;
     padding: 16px 34px 14px 38px;
     transition: 0.5s;
-    &:hover {
+    &:active {
         background-color: var(--main-charm-color);
     }
     

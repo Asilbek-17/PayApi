@@ -8,10 +8,10 @@
 
 
 
+
 .site-header {
     padding: 45px 0 52px;
 }
-
 
 .site-header__burger {
     width: 28px;
@@ -64,6 +64,7 @@
 
 .site-nav__wrapper {
     position: fixed;
+    z-index: 99;
     top: 0;
     right: 0;
     bottom: 0;
@@ -92,8 +93,7 @@
     margin-bottom: 32px;
     color: var(--main-white-water-color);
     opacity: 0.7;
-    transition: 0.5s;
-    &:hover {
+    &:active {
         opacity: 1;
     }
 }
@@ -111,7 +111,7 @@
     border-radius: 24px;
     padding: 16px 34px 14px 38px;
     transition: 0.5s;
-    &:hover {
+    &:active {
         background-color: var(--main-charm-color);
     }
     
@@ -127,7 +127,10 @@
 
 
 @include mobile-first(700px) {
-    
+
+    .site-header {
+        background-image: none;
+    }
     .site-header__wrapper {
         display: flex;
         align-items: center;
@@ -182,11 +185,24 @@
 @include mobile-first (780px) {
     
     .pricing__circle {
-        background-position: calc(50% + 450px) calc(50% - 600px)
+        background-position: calc(50% + 450px) calc(50% - 600px);
     }
+    
+    
 }
 
+@include mobile-first (900px) {
+    .site-header {
+        overflow: hidden;
+    }
 
+    .site-nav__link {
+        &:active {
+            color: #36536B;
+            opacity: 1;
+        }
+    }
+}
 
 
 @include mobile-first (1000px) {
@@ -198,5 +214,9 @@
     
     .sitenav-link {
         margin-left: 40px;
+
+        &:active {
+            color: #36536B;
+        }
     }
 }

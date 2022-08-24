@@ -1,17 +1,16 @@
 
 //  Contact form hero start ==========================
 
+.contact__circle {
+    background-image: url("../images/icons/Bitmap.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 340px) calc(50% - 850px);
+}
+
+
 .contact__hero-block {
     width: 327px;
     margin: 0 auto
-}
-
-.pricing__circle {
-    background-position: calc(50% + 400px) calc(50% - 750px);
-}
-
-.contact__hero-wrapper {
-    // margin: 0 auto;
 }
 
 .contact__hero-title {
@@ -40,8 +39,8 @@
     border: none;
     outline: none;
     background-color: transparent;
-    border-bottom: 1px solid var(--main-san-juan-color);
-    opacity: 0.5;
+    border-bottom: 1px solid #B1B4B6;
+    opacity: 1;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 20px;
@@ -51,6 +50,7 @@
         font-size: 15px;
         line-height: 25px;
         letter-spacing: -0.115385px;
+        opacity: 0.5;
     }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .contact__hero-username:focus {
-    opacity: 1;
+    border-bottom-color: var(--main-san-juan-color);
 }
 
 .contact__hero-message:focus {
@@ -82,13 +82,13 @@
 
 .contact__hero-username:not(:placeholder-shown):not(:focus):invalid{
     color: #ff0000;
-    opacity: 0.5;
+    opacity: 1;
     border-bottom-color: #ff0000;
 }
 
 
 .contact__hero-username:not(:placeholder-shown):not(:focus):invalid + span {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 
@@ -117,12 +117,26 @@
     align-items: center;
 }
 
-.contact__form-true {
+.contact__form-true { 
+    display: inline-block;
     width: 24px;
     height: 24px;
     background-color: var(--main-san-juan-color);
     opacity: 0.25;
     margin-right: 26px;
+    cursor: pointer;
+}
+
+
+
+.contact__form-check input:checked ~ .contact__form-true { 
+    background-image: url("../images/icons/checkend.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 14px;
+    background-position: center;
+    opacity: 1;
+    background-color: red;
+
 }
 
 .contact__form-text {
@@ -193,6 +207,9 @@
     .contact__form-text {
         font-size: 12px;
     }
+
+   
+
    
 }
 
@@ -245,6 +262,12 @@
 // ====================================== 700 px ================================================
 
 @include mobile-first (700px) {
+
+    .contact__circle {
+        background-position: calc(50% + 340px) calc(50% - 780px);
+    }
+
+
     .contact__hero-item {
         grid-template-columns: repeat(3,auto);
         gap: 60px;
@@ -276,9 +299,13 @@
 }
 
 
-// ====================================== 700 px ================================================
+// ====================================== 1000 px ================================================
 
 @include mobile-first (1000px) {
+
+    .contact__circle {
+        background-position: calc(50% + 340px) calc(50% - 550px);
+    }
 
     .contact__hero-wrapper {
         display: flex;
@@ -286,9 +313,7 @@
         align-items: center;
     }
 
-    .pricing__circle {
-        background-position: calc(50% + 400px) calc(50% - 550px);
-    }
+  
 
     .contact__hero-block {
         width: 500px;

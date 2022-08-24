@@ -128,7 +128,8 @@
 @include mobile-first(1024px) {
     .about-hero {
         background-image: url("../images/person-desktop.png");
-        background-size: contain;
+        background-position: calc(50%) calc(100%);
+        background-size: 1440px 500px;
         background-repeat: no-repeat;
         padding-bottom: 500px;
     }

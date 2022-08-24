@@ -3,7 +3,7 @@
 .partner {
     margin-top: 79px;
     background-color: #1B262F;
-    background-image: url('../../images/icons/circle.svg');
+    background-image: url('../images/icons/circle.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(50% - 0px) calc(-50% + -463px);
@@ -60,7 +60,7 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
 
     .partner__btn-box {
         display: flex;
@@ -148,12 +148,16 @@
         width: 500px;
     }
 
-    .partner__right {
-        padding: 0 120px;
-    }
-
     .partner__title {
         font-size: 48px;
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+
+    .partner__right {
+        padding: 0 120px;
     }
 
 }
@@ -171,7 +175,7 @@
 
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1000px) {
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
 
     .partner__right {
         padding: 0 157px;
@@ -183,17 +187,33 @@
 
 }
 
-@media only sceen and (min-width: 1001px) {
+@media only screen and (min-width: 1100px) {
 
     .partner__wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     .partner {
         background-position: calc(50% - 648px) calc(-50% - 939px);
+    }
+
+    .partner__right {
+        width: 445px;
+    }
+
+    .partner__btn-box {
+        margin-top: 50px;
+    }
+
+    .partner__title {
+        text-align: left;
+    }
+
+    .partner__text {
+        text-align: left;
     }
 
 }

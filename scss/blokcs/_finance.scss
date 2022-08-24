@@ -24,7 +24,7 @@
     content: "";
     width: 106px;
     height: 106px;
-    background-image: url("../../images/icons/money.svg");
+    background-image: url("../images/icons/money.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -56,7 +56,7 @@
     content: "";
     width: 106px;
     height: 106px;
-    background-image: url("../../images/icons/pay.svg");
+    background-image: url("../images/icons/pay.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -115,9 +115,6 @@
         align-items: center;
         justify-content: space-between;
     }
-
-
-
 
     .finance__item {
         width: 100%;
